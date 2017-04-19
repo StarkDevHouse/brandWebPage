@@ -8,6 +8,7 @@ $(document).ready(function() {
 		navigation: true,
 		navigationPosition: 'right',
 		slideNavigation: true,
+		loopHorizontal: true,
 		// scrollHorizontally: true,
 		dragAndMove: true,
 	})
@@ -29,7 +30,7 @@ $(document).ready(function() {
 
 
 
-window.addEventListner('orientationchange', function(){
+window.addEventListener('orientationchange', function(){
 	if(window.orientation == -90) {
 		document.getElementById('orient').className = 'orientright';
 	}
